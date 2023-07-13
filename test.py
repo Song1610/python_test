@@ -1,5 +1,3 @@
 print('hello python!')
 
-print('hahahaahaha jeon wonwoo! ')
-
-apfhd 
+print('hahahaahaha I love mingyu! ')
