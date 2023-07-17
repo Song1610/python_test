@@ -73,7 +73,7 @@ print(  )
 str_o1 = "python"
 str_o2 = "apple"
 str_o3 = "what are you doing?"
-str_o4 = "Today is wonwoo of seventeen birthday"
+str_o4 = "Today! is wonwoo of seventeen birthday!"
 
 print(str_o1 * 4)
 print(str_o1 +  str_o2)
@@ -105,7 +105,41 @@ print("replace", str_o1.replace("on", 'nice'))
 print("sorted: ", sorted(str_o1))
 
 ## 단어나 문장을 리스트 형태로 배열하여 분리
-print("split: ", str_o4.split(' '))
+print("split: ", str_o4.split('!'))
+
+
+# 반복(시퀀스)
+im_str = "good boy!"
+print(dir(im_str))      # __iter__ : 반복할 수 있다!
+
+# 출력
+for i in im_str:
+    print(i)
+print()
+
+# 슬라이싱
+str_sl = "very nice"
+print(len(str_sl))
+
+# 슬라이싱 연습
+print(str_sl[0:3])  # 순서대로 0, 1, 2
+print(str_sl[5:])   # = [5:9]
+print(str_sl[:len(str_sl)])     # str_sl[:9]
+print(str_sl[:len(str_sl)-1])   # str_sl[:8]
+print(str_sl[1:7:2])
+#          1부터 7까지 2칸씩 띄어서 가져와라
+print(str_sl[-3:])
+print(str_sl[1:-2])
+print(str_sl[::2])
+print(str_sl[::-1])
+print()
+## 음수 : ← / 양수 : → 
+
+# 아스키 코드(or 유니코드)
+a = 'z'
+print(ord(a))       # 문자 → 아스키코드
+print(chr(122))     # 아스키코드 → 문자
+
 
 
 
